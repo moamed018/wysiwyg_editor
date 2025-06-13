@@ -8,7 +8,7 @@ The editor supports various use cases, including controlled and uncontrolled mod
 
 ## Demo Link:
 
-[vercel]()
+[vercel](https://wysiwyg-editor-ruddy.vercel.app/)
 
 ## Key Features
 
@@ -135,6 +135,16 @@ The project includes a test suite written with **Jest** for the `DefaultToolbar`
     - `jest.config.js`: Sets up Jest with `ts-jest`, `jsdom`, and CSS module mocking.
     - `jest.setup.ts`: Imports `@testing-library/jest-dom` for extended assertions.
     - `tsconfig.json`: Configures TypeScript with `es2015`, `dom`, and Jest-related types.
+  
+### Running the Project
+
+To start the project in development mode, run the following command:
+
+```bash
+npm run dev
+```
+
+This launches the Vite development server, and the application will be available at `http://localhost:5173` (or another port if specified).
 
 ### Troubleshooting Installation
 
