@@ -1,0 +1,38 @@
+.custom-toolbar {
+    background: var(--element-bg);
+    justify-content: space-between;
+    gap: 4px;
+    border: 1px solid;
+    border-color: var(--element-border) var(--element-border) var(--element-fg);
+    padding: 6px 4px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-toolbar > div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.custom-toolbar .toolbar-button {
+    padding: 6px 8px;
+    background: var(--element-bg);
+    color: var(--element-fg);
+    border: 1px solid var(--element-border);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.custom-toolbar .toolbar-button:hover {
+    background-color: var(--high-edge-color);
+    color: white;
+    transform: scale(0.95);
+}
+
+.custom-toolbar .toolbar-button.active {
+    background-color: var(--high-edge-color);
+    color: white;
+}

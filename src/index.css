@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --navbar-bg: #f8f8f8;
+    --navbar-shadow: rgba(0, 0, 0, 0.1);
+    --button-bg: #e0e0e0;
+    --button-hover-bg: #d0d0d0;
+    --high-edge-color: #6200ea;
+    --element-border: #b388ff;
+    --element-bg: #f0f0f0;
+    --element-fg: #1a1a1a;
+}
+
+.dark {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --navbar-bg: #2a2a2a;
+    --navbar-shadow: rgba(0, 0, 0, 0.3);
+    --button-bg: #3a3a3a;
+    --button-hover-bg: #4a4a4a;
+    --element-bg: #252525;
+    --element-fg: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+main {
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    color: var(--high-edge-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--element-bg);
+    color: var(--element-fg);
+    border: 1px solid var(--element-border);
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--high-edge-color);
+    color: white;
+    transform: scale(0.95);
+}
+
+.btn.active {
+    background-color: var(--high-edge-color);
+    color: white;
+}
+
+section {
+    margin-bottom: 8rem;
+}

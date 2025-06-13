@@ -1,0 +1,36 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: var(--navbar-bg);
+    box-shadow: 0 2px 4px var(--navbar-shadow);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--button-bg);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.dark-mode-toggle:hover {
+    background-color: var(--button-hover-bg);
+}
